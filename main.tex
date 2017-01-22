@@ -1,0 +1,168 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[]{cv-style}          % Add 'print' as an option into the square bracket to remove colours from this template for printing.
+                                    % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
+
+\sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut
+
+\begin{document}
+
+\header{Carlos Alexander}{~Vializ}           % Your name
+\lastupdated
+
+%---------------------------------------------------------
+%	SIDEBAR SECTION
+%    -- In the aside, each new line forces a line break
+%---------------------------------------------------------
+
+\begin{aside}
+%
+\section{contact}
+1442 Gordon St \#7
+Redwood City, CA 94061
+~
+\texttt{\color{gray}(650) 422-9057}
+\texttt{\color{gray}(209) 800-CLOS}
+\texttt{\color{gray}          2567}
+~
+cv@vt.edu
+www.vializ.me
+github.com/cvializ
+@rockstarclos
+%
+\section{programming}
+Windows \& Unix shell, JS\,(Node\,\&\,DOM), C, Java, C\#, Python, Assembly, Morse, Smoke signals, \LaTeX{}%
+\\[\baselineskip]%
+WAI-ARIA, WCAG, HTML5, CSS3, ECMAScript 6+, WebSocket, {Extension~APIs}%
+\\[\baselineskip]%
+React, Angular, Jasmine, Istanbul, Grunt/Gulp, Browserify%
+%
+\section{interests}
+\textbf{professional:} Responsive web design, real-time app development, clean straightforward code. Volunteer tutoring English literacy and computer skills.
+\textbf{personal:} Aviation/Aerobatics ({Piper~Cherokee},\\{C172}, Citabria, {Super~Decathlon}), Hiking, Camping, Climbing, Biking, Unicycling, Photography
+%
+\end{aside}
+
+%---------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%---------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {2015--now}
+  {Kifi}
+  {Mountain View, CA}
+  {\jobtitle{Lead UI/UX Engineer}
+  \begin{itemize}
+  	\item Developed and designed \textit{Kifi for Teams} UI to add an additional layer of information to the architecture of the consumer facing product.
+  	\item Maintained extension and code injection framework that must work on all webpages, including dynamically injecting search results into Google. Kifi results now display faster than Google's. Extension currently rated\score{4.5}{5} by users.
+    \item Built and enhanced core components of Kifi.com site with AngularJS, including payment processing, profiles, settings, libraries, and the stream.
+    \item Released Safari extension by building abstraction around Safari Extension API.
+    \item Improved keeping UI to use real-time typeahead contacts searches, with client-side caching for responsive performance.
+  \end{itemize}}
+%------------------------------------------------
+\entry
+  {2014--15}
+  {Visa, Inc.}
+  {Foster City, CA}
+  {\jobtitle{UI/UX Engineer}
+  \begin{itemize}
+    \item Architected CSS framework for reusable common components, utilizing flexible Node tools e.g. PostCSS.
+    \item Transferred the Visa Checkout SPA from Backbone/Rails to a React/Node.js stack.
+    \item Increased conversion of shopping sales by over 15\%, driving millions in transactions.
+  \end{itemize}}
+%------------------------------------------------
+\entry
+  {2012-14}
+  {Virginia Tech: Microsoft Secure Infrastructure Services}
+  {Blacksburg, VA}
+  {\jobtitle{Student Software Engineer}
+  \begin{itemize}
+    \item Implemented log-correlation to detect VT account lockouts. Made searchable with ElasticSearch/Kibana.
+    \item Allowed VT network users to pinpoint devices or malicious agents causing lockouts.
+  \end{itemize}}
+%------------------------------------------------
+\entry
+  {2013}
+  {Tridium, Inc.}
+  {Richmond, VA}
+  {\jobtitle{Software Engineer Intern}
+  \begin{itemize}
+    \item Developed a reusable HTML5 chart system for the Niagara/BajaScript equipment automation platform.
+    \item Implemented Java annotation processors to reduce boilerplate in Niagara API.
+  \end{itemize}}
+%------------------------------------------------
+
+\end{entrylist}
+
+%---------------------------------------------------------
+%	EDUCATION SECTION
+%---------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2010--14}
+{B.S. Computer Science. Mathematics Minor. {\normalfont Virginia Tech}}
+{Blacksburg, VA}
+{Focus: Algorithms and systems programming. Language, parser, and compiler design and implementation. Debugging, from IDE to gdb. Electives: Parallel computing with OpenMP, Pthreads, MapReduce; Human-Computer Interaction, with end-to-end UI/UX design \& implementation; Creative Computing Capstone studying the intersection between art, utility, and computation.}
+%------------------------------------------------
+\end{entrylist}
+
+%---------------------------------------------------------
+%	AWARDS SECTION
+%---------------------------------------------------------
+
+\section{qualifications and awards}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2013}
+{Private Pilot Certificate}
+{Federal Aviation Administration}
+{\vspace{-1.0cm}}
+%------------------------------------------------
+\entry
+{2014}
+{Scholarship for Academic Merit}
+{Virginia Tech Computer Science Research Consortium}
+{\vspace{-1.0cm}}
+%------------------------------------------------
+\entry
+{2013}
+{Scholarship for Academic Merit}
+{Zora and Gilmer Warfield Scholarship Fund}
+{\vspace{-1.0cm}}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{projects}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2014-now}
+{The Resistence Universe: Coup}
+{http://coup.vializ.me}
+{A realtime, multi-room, online version of Coup, the popular dystopian tabletop game.}
+%------------------------------------------------
+\entry
+{2014-now}
+{Aviation Weight and Balance}
+{http://wab.vializ.me}
+{An extensible, interactive weight and balance calculator to quickly and safely determine aircraft loading.}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
