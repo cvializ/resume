@@ -31,7 +31,7 @@
    \let\partstar=\pgfmathresult
    \ifnum\partstar>0
      \pgfmathsetmacro\starpart{#1-(int(#1))}
-     \path [clip] ($(star\partstar.outer point 3)!(star\partstar.outer point 2)!(star\partstar.outer point 4)$) rectangle 
+     \path [clip] ($(star\partstar.outer point 3)!(star\partstar.outer point 2)!(star\partstar.outer point 4)$) rectangle
     ($(star\partstar.outer point 2 |- star\partstar.outer point 1)!\starpart!(star\partstar.outer point 1 -| star\partstar.outer point 5)$);
      \fill (\partstar*1em,0) node[scorestars,fill=white]  {};
    \fi
@@ -64,10 +64,10 @@
   \colorlet{purple}{gray}
   \colorlet{aquamarine}{gray}
   \colorlet{fillheader}{white}
-  \colorlet{header}{gray}
+  \colorlet{headerColor}{gray}
 \else
   \colorlet{fillheader}{white}
-  \colorlet{header}{gray}
+  \colorlet{headerColor}{gray}
 \fi
 \colorlet{textcolor}{gray}
 \colorlet{headercolor}{gray}
@@ -100,7 +100,7 @@
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
-      \fontsize{40pt}{65pt}\color{header}%
+      \fontsize{40pt}{65pt}\color{headerColor}%
       {\thinfont #1}{\bodyfont  #2}
     };
   \end{tikzpicture}
@@ -131,10 +131,10 @@
 \setlength{\TPHorizModule}{0.01\paperwidth}
 \setlength{\TPVertModule}{0.01\paperwidth}
 
-\newcommand{\lastupdated}{ 
+\newcommand{\lastupdated}{
   \begin{textblock}{10}(11.3, 0.05)
     \raggedleft
-    \fontsize{8pt}{10pt}\color{date}\thinfont 
+    \fontsize{8pt}{10pt}\color{date}\thinfont
     \lastupdatedtext{} \today
   \end{textblock}}
 
